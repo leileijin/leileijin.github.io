@@ -1,56 +1,40 @@
 # jemdoc: nofooter
 # jemdoc: addcss{css/jemdoc.css}
 # jemdoc: addcss{css/myMiddle.css}
-# jemdoc: title{Hao Geng - The Chinese University of Hong Kong}
+# jemdoc: title{Leilei Jin - The Chinese University of Hong Kong}
 
 ~~~
 {}{img_left}{img/photo.jpg}{}{126}{}{}
 = Hao Geng
 
-*Ph.D. student*  
+*Ph.D., Postdoctoral Researcher*  
 
 [http://www.cse.cuhk.edu.hk Department of Computer Science and Engineering] \n
 [http://www.cuhk.edu.hk/english/index.html The Chinese University of Hong Kong] \n
-*Office*:Rm 902, Ho Sin Hang Engineering Building \n
-*Email*:hgeng\[at\]cse.cuhk.edu.hk \n
+*Office*:Rm 905, Department of Computer Science and Engineering \n
+*Email*:leileijin[at]cuhk.edu.hk \n
 ~~~
-
-#{{<a href="https://www.linkedin.com/in/yuzhe-ma-275a7bb5" target="<u>blank"><img src="img/linkedin-logo.png" height=30></a>
-#<a href="https://scholar.google.com/citations?user=iANUv3MAAAAJ&hl=en&oi=sra" target="<u>blank"><img src="img/scholar.png" height=30></a>  }}
-
 
 == Biography
 
-I'm a Ph.D. student at the [http://www.cse.cuhk.edu.hk Department of Computer Science and Engineering],  
-[http://www.cuhk.edu.hk/english/index.html The Chinese University of Hong Kong (CUHK)], 
-under the supervision of [http://www.cse.cuhk.edu.hk/~byu/ Prof. Bei Yu] since Fall 2017.
-Previously, I received Master of Science with Merit from [https://www.imperial.ac.uk/computing Department of Computing], [https://www.imperial.ac.uk/ Imperial College London] in 2016,
-and Master of Engineering from [http://www.ustc.edu.cn/ USTC] in 2015.
-
+I'm a Ph.D. at the [href="http://www.cse.cuhk.edu.hk" target=&ldquo;blank&rdquo;>Department of Computer Science and Engineering],  
+[http://www.cuhk.edu.hk/english/index.html" target=&ldquo;blank&rdquo;>The Chinese University of Hong Kong (CUHK)], 
+with [https://www.cse.cuhk.edu.hk/people/faculty/tsung-yi-ho/] target=&ldquo;blank&rdquo;>Prof. Tsung-Yi Ho</a> since 2025.
+Previously, I got my Ph.D. from [href="https://www.seu.edu.cn/] Southeast Univeristy (SEU) in 2024.
 My research interests include machine learning and deep learning with applications in VLSI CAD and image processing.
 
-#[http://yuzhe630.github.io/cv/cv_Yuzhe.pdf *My Resume/CV*]
-
-
 == Publications
-- \[J1\] Lizhe Wang, *Hao Geng*, Peng Liu, Ke Lu, Joanna Kolodziej, Rajiv Ranjan, Albert Zomaya,
-  "[http://www.sciencedirect.com/science/article/pii/S0950705114003712 Particle Swarm Optimization based Dictionary Learning for Remote Sensing Big Data]",
-  Knowledge-Based System, vol. 79, pages 43-50, Elsevier, May, 2015.
+- \[C9\] Jiajie Xu, Ziyue Han, *Leilei Jin*, Shiyang Wu, Hao Yan, Longxing Shi, Longxing Shi, FACT: Fast and Accurate Multi-Corner Predictor for Timing Closure in Commercial EDA Flows, in Proceedings of the 2024 ACM/IEEE International Symposium on Machine Learning for CAD, pp. 1-7, IEEE 2024.
+- \[C8\] Junzhuo Zhou, Li Huang, Haoxuan Xia, Yihui Cai, *Leilei Jin*, Xiao Shi, Wei Xing, Ting-Jung Lin, Lei He, LVF2: A statistical timing model based on Gaussian mixture for yield estimation and speed binning, in Proceedings of the 61st ACM/IEEE Design Automation Conference (DAC), pp. 1-6, IEEE 2024.
+- \[C7\] Jiajie Xu, *Leilei Jin*, Wenjie Fu, Longxing Shi, A deep-learning-based statistical timing prediction method for sub-16nm technologies, in 2024 Design, Automation & Test in Europe Conference & Exhibition (DATE), pp. 1-6, IEEE 2024.
+- \[C6\] Jiajie Xu, *Leilei Jin*, Hao Yan, An accurate statistical cell delay model considering multiple-input switching effect, in 2023 International Symposium of Electronics Design Automation (ISEDA), pp. 375-378, IEEE 2023.
+- \[C5\] *Leilei Jin*, Jiajie Xu, Wenjie Fu, Hao Yan, Xiao Shi, Ming Ling, Longxing Shi, A novel delay calibration method considering interaction between cells and wires, in 2023 Design, Automation & Test in Europe Conference & Exhibition (DATE), pp. 1-6, IEEE 2023.
+- \[C4\] *Leilei Jin*, Jiajie Xu, Wenjie Fu, Xiao Shi, A Quantile-Based SUM/MAX Operating Method for Statistical Timing Analysis, in 2022 IEEE 16th International Conference on Solid-State & Integrated Circuit Technology (ICSICT),pp. 1-4, IEEE 2022.
+- \[J3\] *Leilei Jin*, Wenjie Fu, Hao Yan, Longxing Shi, A statistical cell delay model for estimating the 3σ delay by matching kurtosis, in IEEE Transactions on Circuits and Systems II: Express Briefs, pp. 2932-2936, IEEE 2022.
+- \[J2\] *Leilei Jin*, Leilei Jin, Wenjie Fu, Ming Ling, Longxing Shi, A fast cross-layer dynamic power estimation method by tracking cycle-accurate activity factors with spark streaming, in IEEE Transactions on Very Large Scale Integration (VLSI) Systems, pp. 353-364, IEEE 2021.
+- \[J1\] Wenjie Fu, *Leilei Jin*, Ming Ling, Yu Zheng, Longxing Shi, VASTA: A wide voltage statistical timing analysis tool based on variation-aware cell delay models, in IEEE Access, vol. 8, pp. 197194-197202, 2020. 
+- \[C3\] Wenjie Fu, *Leilei Jin*, Ming Ling, Yu Zheng, Longxing Shi, A cross-layer power and timing evaluation method for wide voltage scaling, in 2020 57th ACM/IEEE Design Automation Conference (DAC), pages 1-6, IEEE 2020.
+- \[C2\] Wenjie Fu, Yu Zheng, *Leilei Jin*, Ming Ling, A fast reduction method for path process variations without time-consuming training, in 2019 IEEE 13th International Conference on ASIC (ASICON), pages 1-4, IEEE 2019.
+- \[C1\] *Leilei Jin*, Wenjie Fu, Yu Zheng, Hao Yan, A precise block-based statistical timing analysis with max approximation using multivariate adaptive regression splines, in 2019 IEEE 13th International Conference on ASIC (ASICON), pages 1-4, IEEE 2019.
 
-- \[C1\] *Hao Geng*, Lizhe Wang, Peng Liu, Lajiao Chen,
-  "[http://ieeexplore.ieee.org/abstract/document/6946980/ Compressed Sensing Based Remote Sensing Image Reconstruction Using an Auxiliary Image as Priors]",
-  in IEEE Geoscience and Remote Sensing Symposium (IGARSS), pages 2499-2502, IEEE, Quebec, Canada, 2014.
-
-
-== Selected Awards
-~~~
-{}{table}{noborder}
-Postgraduate Studentship           | CUHK  | 2017-2021  ||
-Suzhou Industrial Park Scholarship | USTC  | 2014 
-~~~
-
-
-== Teaching
-
-2017 Fall: [http://www.cse.cuhk.edu.hk/~byu/CENG4480/index.html CENG4480 -- Embedded System Development and Applications]
 
