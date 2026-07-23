@@ -444,27 +444,22 @@ a:hover {
 
 .edu-icon {
   flex-shrink: 0;
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #fff;
+  border: 1px solid var(--border);
+  padding: 4px;
+  overflow: hidden;
 }
 
-.edu-icon.postdoc {
-  background: #dcfce7;
-  color: #166534;
-}
-
-.edu-icon.phd {
-  background: var(--primary-light);
-  color: var(--primary);
-}
-
-.edu-icon.bs {
-  background: #fef3c7;
-  color: #92400e;
+.edu-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .edu-info {
