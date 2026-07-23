@@ -444,22 +444,26 @@ a:hover {
 
 .edu-icon {
   flex-shrink: 0;
-  width: 48px;
-  height: 48px;
+  width: 52px;
+  height: 52px;
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #fff;
   border: 1px solid var(--border);
-  padding: 4px;
+  padding: 0;
   overflow: hidden;
 }
 
 .edu-icon img {
-  width: 100%;
-  height: 100%;
+  display: block;
+  width: 38px;
+  height: 38px;
+  max-width: 38px;
+  max-height: 38px;
   object-fit: contain;
+  object-position: center;
 }
 
 .edu-info {
