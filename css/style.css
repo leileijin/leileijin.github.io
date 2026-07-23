@@ -172,6 +172,7 @@ a:hover {
 }
 
 .profile-sidebar {
+  display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -186,8 +187,14 @@ a:hover {
 }
 
 .profile-sidebar .profile-photo {
+  display: block;
   width: 120px;
   height: 120px;
+  margin: 0 auto;
+}
+
+.profile-sidebar .profile-info {
+  width: 100%;
 }
 
 .profile-sidebar .profile-info h1 {
@@ -256,6 +263,10 @@ a:hover {
   align-items: flex-start;
   gap: 36px;
   flex-wrap: wrap;
+}
+
+.profile.profile-sidebar {
+  align-items: center;
 }
 
 .profile-photo {
@@ -825,11 +836,33 @@ a:hover {
 /* === Footer === */
 .footer {
   text-align: center;
-  padding: 20px 0 18px;
+  padding: 18px 0 16px;
   color: #cbd5e1;
   font-size: 0.85rem;
-  line-height: 1.8;
+  line-height: 1.6;
   background: #334155;
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-email {
+  display: block;
+  width: 100%;
+}
+
+.footer-meta {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  color: #94a3b8;
+  font-size: 0.8rem;
 }
 
 .footer a {
@@ -844,13 +877,23 @@ a:hover {
 .visitor-map {
   display: flex;
   justify-content: center;
-  margin: 12px 0 8px;
+  align-items: flex-start;
+  width: 100%;
+  height: 56px;
+  overflow: hidden;
+  margin: 4px 0;
 }
 
-.visitor-map a,
-.visitor-map img {
+.visitor-map-inner {
+  transform: scale(0.3);
+  transform-origin: top center;
+}
+
+.visitor-map-inner a,
+.visitor-map-inner img,
+.visitor-map-inner iframe {
   display: block;
-  max-width: 100%;
+  max-width: none;
 }
 
 /* === Responsive === */
