@@ -705,6 +705,33 @@ a:hover {
 }
 
 /* === Moments gallery === */
+.moments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.moment-entry {
+  margin: 0;
+}
+
+.moment-entry img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.moment-entry figcaption {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #334155;
+  line-height: 1.6;
+}
+
 .moments-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -982,16 +1009,6 @@ a:hover {
   .timeline-list li {
     grid-template-columns: 1fr;
     gap: 2px;
-  }
-
-  .moments-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .profile-sidebar {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
   }
 
   .profile-sidebar .profile-links {
