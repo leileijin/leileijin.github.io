@@ -891,27 +891,14 @@ a:hover {
 .visitor-map {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 100%;
   margin: 12px 0 14px;
 }
 
 .visitor-map-inner {
   display: inline-block;
-  line-height: 0;
-}
-
-.visitor-map-inner a {
-  display: inline-block;
-  line-height: 0;
-}
-
-.visitor-map-inner img,
-.visitor-map-inner iframe {
-  display: block;
-  width: 260px;
+  width: 220px;
   max-width: 100%;
-  height: auto;
 }
 
 /* === Responsive === */
