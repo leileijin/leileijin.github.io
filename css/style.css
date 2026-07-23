@@ -16,8 +16,8 @@
   --shadow: 0 1px 3px rgba(0,0,0,0.08);
   --shadow-md: 0 4px 16px rgba(0,0,0,0.06);
   --radius: 8px;
-  --max-width: 1120px;
-  --sidebar-width: 320px;
+  --max-width: 1280px;
+  --sidebar-width: 340px;
   --masthead-height: 58px;
 }
 
@@ -202,6 +202,12 @@ a:hover {
 .profile-sidebar .profile-info .affiliation,
 .profile-sidebar .profile-info .contact {
   font-size: 0.82rem;
+  line-height: 1.65;
+}
+
+.profile-sidebar .affiliation a {
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .profile-sidebar .profile-links {
@@ -225,6 +231,13 @@ a:hover {
 
 .tab-panel.active {
   display: flex;
+}
+
+.bio-always {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 24px;
 }
 
 /* === Header / Profile (legacy full-width header) === */
@@ -869,6 +882,10 @@ a:hover {
 
   .profile-sidebar .profile-links {
     justify-content: flex-start;
+  }
+
+  .profile-sidebar .affiliation a {
+    white-space: normal;
   }
 }
 
