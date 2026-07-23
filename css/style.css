@@ -891,23 +891,26 @@ a:hover {
 .visitor-map {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
-  overflow: visible;
-  margin: 10px 0 6px;
-  padding-bottom: 130px;
+  margin: 12px 0 14px;
 }
 
 .visitor-map-inner {
-  transform: scale(3);
-  transform-origin: top center;
+  display: inline-block;
+  line-height: 0;
 }
 
-.visitor-map-inner a,
+.visitor-map-inner a {
+  display: inline-block;
+  line-height: 0;
+}
+
 .visitor-map-inner img,
 .visitor-map-inner iframe {
   display: block;
-  max-width: none;
+  width: 260px;
+  max-width: 100%;
   height: auto;
 }
 
