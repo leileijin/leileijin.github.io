@@ -240,11 +240,14 @@ a:hover {
   display: flex;
 }
 
-.bio-always {
+.home-intro {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-bottom: 24px;
+}
+
+.home-intro.is-hidden {
+  display: none;
 }
 
 /* === Header / Profile (legacy full-width header) === */
@@ -652,6 +655,12 @@ a:hover {
   color: #0f172a;
   font-size: 0.9rem;
   white-space: nowrap;
+  grid-column: 1;
+}
+
+.timeline-list .timeline-body {
+  grid-column: 2;
+  min-width: 0;
 }
 
 .timeline-list strong {
@@ -661,6 +670,11 @@ a:hover {
 .timeline-list em {
   font-style: italic;
   color: #334155;
+}
+
+.timeline-list li.timeline-item-full {
+  grid-template-columns: 1fr;
+  white-space: nowrap;
 }
 
 /* === Professional Service === */
