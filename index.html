@@ -9,26 +9,25 @@
 </head>
 <body>
 
-<!-- Sticky Nav -->
-<nav class="nav" id="nav">
-  <div class="wrapper nav-inner">
-    <a class="nav-brand" href="index.html">Leilei Jin</a>
-    <div class="nav-links">
-      <a href="#news">News</a>
-      <a href="#bio">Bio</a>
-      <a href="#service">Service</a>
-      <a href="#publications">Pubs</a>
-      <a href="#honors">Honors</a>
-      <a href="#moments">Moments</a>
+<!-- Top masthead (template-style tabs) -->
+<header class="masthead">
+  <div class="wrapper masthead-inner">
+    <a class="masthead-brand" href="index.html">Leilei Jin</a>
+    <nav class="masthead-nav" aria-label="Site sections">
+      <a href="index.html#news" data-tab="news" class="active">News</a>
+      <a href="index.html#bio" data-tab="bio">Bio</a>
+      <a href="index.html#service" data-tab="service">Service</a>
+      <a href="index.html#publications" data-tab="publications">Pubs</a>
+      <a href="index.html#honors" data-tab="honors">Honors</a>
+      <a href="index.html#moments" data-tab="moments">Moments</a>
       <a href="resources.html">Resources</a>
-    </div>
+    </nav>
   </div>
-</nav>
+</header>
 
-<!-- Header -->
-<header class="header">
-  <div class="wrapper">
-    <div class="profile">
+<div class="site-layout wrapper">
+  <aside class="sidebar">
+    <div class="profile profile-sidebar">
       <img class="profile-photo" src="img/leilei-dounew.jpg" alt="Leilei Jin" />
       <div class="profile-info">
         <h1>Leilei Jin (金蕾蕾)</h1>
@@ -48,11 +47,11 @@
         </div>
       </div>
     </div>
-  </div>
-</header>
+  </aside>
 
-<!-- Main Content -->
-<main class="main wrapper">
+  <main class="site-content">
+
+  <div class="tab-panel active" data-tab="news">
 
   <!-- News -->
   <section id="news" class="section">
@@ -70,7 +69,9 @@
       <li><time>2025.08</time> Joined CUHK CSE as a Postdoctoral Researcher, working with <a href="https://www.cse.cuhk.edu.hk/people/faculty/tsung-yi-ho/" target="_blank" rel="noopener">Prof. Tsung-Yi Ho</a>.</li>
     </ul>
   </section>
+  </div>
 
+  <div class="tab-panel" data-tab="bio">
   <!-- Biography -->
   <section id="bio" class="section bio">
     <h2>
@@ -146,7 +147,9 @@
       <span class="interest-tag">STA</span>
     </div>
   </section>
+  </div>
 
+  <div class="tab-panel" data-tab="service">
   <!-- Professional Service -->
   <section id="service" class="section">
     <h2>
@@ -171,7 +174,9 @@
       </ul>
     </div>
   </section>
+  </div>
 
+  <div class="tab-panel" data-tab="publications">
   <!-- Publications -->
   <section id="publications" class="section">
     <h2>
@@ -388,7 +393,9 @@
       <div class="pub-venue">IEEE International Conference on ASIC (ASICON), pp. 1-4, 2019</div>
     </div>
   </section>
+  </div>
 
+  <div class="tab-panel" data-tab="honors">
   <!-- Honors & Awards -->
   <section id="honors" class="section">
     <h2>
@@ -414,7 +421,9 @@
       </li>
     </ul>
   </section>
+  </div>
 
+  <div class="tab-panel" data-tab="moments">
   <!-- Moments -->
   <section id="moments" class="section">
     <h2>
@@ -463,8 +472,10 @@
     </div>
     <p class="moments-hint">Tip: put photos as <code>img/moments/dac26.jpg</code>, <code>ispd26.jpg</code>, <code>iccad25.jpg</code>, <code>cuhk.jpg</code> — they will show up automatically.</p>
   </section>
+  </div>
 
-</main>
+  </main>
+</div>
 
 <footer class="footer">
   <div class="wrapper">
@@ -477,19 +488,28 @@
 </footer>
 
 <script>
-  // Highlight active nav link on scroll
-  const sections = document.querySelectorAll('main section[id]');
-  const navLinks = document.querySelectorAll('.nav-links a');
-  const onScroll = () => {
-    let current = '';
-    sections.forEach(s => {
-      if (window.scrollY >= s.offsetTop - 100) current = s.id;
+  const validTabs = ['news', 'bio', 'service', 'publications', 'honors', 'moments'];
+  const panels = document.querySelectorAll('.tab-panel');
+  const navLinks = document.querySelectorAll('.masthead-nav a[data-tab]');
+
+  function showTab(tabId) {
+    if (!validTabs.includes(tabId)) tabId = 'news';
+    panels.forEach(panel => panel.classList.toggle('active', panel.dataset.tab === tabId));
+    navLinks.forEach(link => link.classList.toggle('active', link.dataset.tab === tabId));
+    const url = tabId === 'news' ? 'index.html' : `index.html#${tabId}`;
+    history.replaceState(null, '', url);
+    window.scrollTo({ top: 0, behavior: 'instant' in window ? 'instant' : 'auto' });
+  }
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', event => {
+      event.preventDefault();
+      showTab(link.dataset.tab);
     });
-    navLinks.forEach(a => {
-      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
-    });
-  };
-  window.addEventListener('scroll', onScroll, { passive: true });
+  });
+
+  const initialTab = location.hash.replace('#', '');
+  showTab(validTabs.includes(initialTab) ? initialTab : 'news');
 </script>
 
 </body>
