@@ -588,6 +588,24 @@ a:hover {
   color: var(--text);
 }
 
+.pub-pdf {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 4px;
+  line-height: 0;
+}
+
+.pub-pdf img {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  transition: opacity 0.15s;
+}
+
+.pub-pdf:hover img {
+  opacity: 0.75;
+}
+
 .pub-item .pub-venue {
   font-size: 0.84rem;
   color: #94a3b8;
