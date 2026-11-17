@@ -607,6 +607,11 @@ a:hover {
   transition: opacity 0.15s;
 }
 
+.pub-pdf img[alt="PPT"] {
+  width: 20px;
+  height: 20px;
+}
+
 .pub-pdf:hover img {
   opacity: 0.75;
 }
