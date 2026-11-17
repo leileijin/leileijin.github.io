@@ -429,6 +429,11 @@ a:hover {
   color: #334155;
 }
 
+.news-list .pub-pdf {
+  margin-left: 3px;
+  margin-right: 1px;
+}
+
 /* === Education === */
 .edu-list {
   list-style: none;
